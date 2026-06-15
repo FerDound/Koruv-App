@@ -33,12 +33,12 @@ suspend fun subirACloudinary(context: Context, imageUri: Uri): String? {
             val requestBody = MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("file", "image.jpg", imageBytes.toRequestBody("image/*".toMediaType()))
-                .addFormDataPart("upload_preset", "android_upload")
+                .addFormDataPart("upload_preset", "TU_UPLOAD_PRESET")
                 .build()
 
             val response = OkHttpClient().newCall(
                 Request.Builder()
-                    .url("https://api.cloudinary.com/v1_1/dxymgqjb8/image/upload")
+                    .url("https://api.cloudinary.com/v1_1/TU_CLOUD_NAME/image/upload")
                     .post(requestBody)
                     .build()
             ).execute()
