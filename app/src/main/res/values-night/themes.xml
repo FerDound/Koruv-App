@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Project_sketch" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <style name="Theme.Project_sketch.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#191A1C</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenIconBackgroundColor">@mipmap/ic_launcher_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.Project_sketch</item>
+    </style>
+</resources>

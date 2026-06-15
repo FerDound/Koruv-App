@@ -1,0 +1,4 @@
+<resources>
+    <string name="Koruv" translatable="false">Koruv</string>
+    <string name="title_activity_encuesta">EncuestaActivity</string>
+</resources>
